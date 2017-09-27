@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    i'm in display.html<br/>
+    {% if error %}
+        <h3>Houston we have a problem: {{error}}</h3>
+    {% endif %}
+
+    <h3>Items</h3>
+    <ul>
+        {% for item in items %}
+            <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="/fav" method="post">
+        <p><label>fav color: <input type="text" name="fav-color" value="{{color}}"/></label></p>
+        <p><label>fav number: <input type="text" name="fav-number" /></label></p>
+        <input type="submit"/>
+    </form> 
+{% endblock %}
